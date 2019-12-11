@@ -74,11 +74,11 @@ TotoCutugnoInnamorati: {Name:'Toto Cutugno Innamorati', DriveURL:'https://drive.
 		window.onload = function(e)
 		{
 		 var key = window.location.hash.substr(1);
-		 Documento.getElementById("nameP1").innerHTML=data[key].Name;
-		 Documento.getElementById("nameP2").innerHTML=data[key].Name;
-		 Documento.title=data[key].Name;
-		 Documento.getElementById("driveFrame").src=data[key].DriveURL;
-		 Documento.getElementById("youtubeFrame").src=data[key].YoutubeURL;
+		 document.getElementById("nameP1").innerHTML=data[key].Name;
+		 document.getElementById("nameP2").innerHTML=data[key].Name;
+		 document.title=data[key].Name;
+		 document.getElementById("driveFrame").src=data[key].DriveURL;
+		 document.getElementById("youtubeFrame").src=data[key].YoutubeURL;
 		 //sDocumento.querySelector("image").setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', data[key].SvgFile);
 		}
 	</script>
